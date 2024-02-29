@@ -25,8 +25,8 @@ const app = createApp({
             const params = {
                 headers: {'Content-Type': 'multipart/form-data'},
             }
-            axios.post('http://localhost:8888/php-todo-list-json/backend/', data, params).then((response) => {
-            
+            axios.get('http://localhost:8888/php-todo-list-json/backend/', data, params).then((response) => {
+                this.todoList = response.data;
             })
         }
     },
@@ -34,5 +34,4 @@ const app = createApp({
         this.fetchTodoList();
     }
 });
-
 app.mount("#app");
