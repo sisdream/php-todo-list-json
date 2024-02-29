@@ -21,21 +21,15 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-4">
                     <h3 class="text-center">Cose da fare</h3>
-                    <ul class="p-0">
-                        <li class="task p-3 mb-3">
-                            <div>task di prova </div>
-                            <div class="action">
-                                <i class="fa-solid fa-check text-success ms-3"></i>
-                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
-                            </div>
+                    <ul class="p-0 task list-group ">
+                        <li class="p-3 mb-3">
+                            <div class="list-group-item" v-for="item in todoList"> {{item}} </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
-
     <script src="./script.js"></script>
 </body>
 </html>

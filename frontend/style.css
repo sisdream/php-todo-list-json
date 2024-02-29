@@ -1,7 +1,5 @@
-.task{
-    background-color: #cbc3b8;
-    display: flex;
-    justify-content: space-between;
+ul li{
+    list-style: none;
 }
 
 i{
