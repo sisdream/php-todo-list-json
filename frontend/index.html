@@ -10,7 +10,40 @@
 </head>
 <body>
     
-
+    <div id="app">
+        <div class="container mt-5">
+            <h1 class="mb-5 text-center">{{ title }}</h1>
+            <h2 class="mb-3">Crea nuove Task</h2>
+            <input type="text" class="form-control mb-3" id="new-task">
+            <button class="btn btn-success mb-3">Salva <i class="fa-regular fa-floppy-disk"></i></button>
+            <div class="row">
+                <div class="col-4">
+                    <h3>Task da eseguire</h3>
+                    <ul class="p-0">
+                        <li class="task p-3 mb-3">
+                            <div> </div>
+                            <div class="action">
+                                <i class="fa-solid fa-check text-success ms-3"></i>
+                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3>Task eseguite</h3>
+                    <ul class="p-0">
+                        <li   class="task p-3 mb-3" >
+                            <div></div>
+                            <div class="action">
+                                <i class="fa-solid fa-arrows-rotate text-warning ms-3"></i>
+                                <i class="fa-solid fa-xmark text-danger ms-3"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="./script.js"></script>

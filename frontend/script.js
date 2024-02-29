@@ -1,3 +1,11 @@
-console.log(Vue);
+const { createApp} = Vue;
 
-console.log(axios);
+const app = createApp({
+    data(){
+        return{
+            title: "PHP ToDo List JSON",
+        }
+    }
+});
+
+app.mount("#app");
