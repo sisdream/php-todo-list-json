@@ -15,8 +15,8 @@
         <div class="container mt-5">
             <h1 class="mb-5 text-center">{{ title }}</h1>
             <h2 class="mb-3">Crea nuove Task</h2>
-            <input type="text" class="form-control mb-3" id="new-task">
-            <button class="btn btn-success mb-3">Salva <i class="fa-regular fa-floppy-disk"></i></button>
+            <input v-model="newItem" @keyUp.enter="addItem()" type="text" class="form-control mb-3">
+            <button @click="addItem()" class="btn btn-success mb-3">Salva <i class="fa-regular fa-floppy-disk"></i></button>
             <div class="row d-flex justify-content-center">
                 <div class="col-4">
                     <h3 class="text-center">Cose da fare</h3>

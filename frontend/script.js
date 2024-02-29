@@ -5,13 +5,18 @@ const app = createApp({
         return{
             title: "PHP ToDo List JSON",
             todoList: [],
+            newItem: "",
         }
     },
     methods:{
         fetchTodoList(){
             axios.get('http://localhost:8888/php-todo-list-json/backend/').then((response) => {
-                console.log(response);
+                this.todoList = response.data;
             });
+        },
+        addItem(){
+            console.log("item da aggiungere: " + this.newItem);
+            this.newItem = '';
         }
     },
     mounted(){
