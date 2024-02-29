@@ -1,5 +1,4 @@
 <?php
-
 $json_list_content = file_get_contents("./todolist.json");
 
 $todolist_array = json_decode($json_list_content);
