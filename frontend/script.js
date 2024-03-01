@@ -10,7 +10,7 @@ const app = createApp({
     },
     methods:{
         fetchTodoList(){
-            axios.get('http://localhost:8888/php-todo-list-json/backend/').then((response) => {
+            axios.get('../backend/index.php').then((response) => {
                 this.todoList = response.data;
             });
         },
@@ -19,13 +19,13 @@ const app = createApp({
             this.newItem = '';
 
             const data = {
-                params:{item},
+                item: item,
             }
 
             const params = {
                 headers: {'Content-Type': 'multipart/form-data'},
             }
-            axios.get('http://localhost:8888/php-todo-list-json/backend/', data, params).then((response) => {
+            axios.post('../backend/item.php', data, params).then((response) => {
                 this.todoList = response.data;
             })
         }
