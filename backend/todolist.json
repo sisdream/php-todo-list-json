@@ -1,14 +1,1 @@
-[
-    {
-        "text":"Passare in banca",
-        "done":true
-    },
-    {
-        "text":"Andare in farmacia",
-        "done":true  
-    },
-    {
-        "text":"Fare la spesa",
-        "done":false
-    } 
-]
+["Passare in banca","Andare in farmacia","Fare la spesa"]
